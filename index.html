@@ -27,13 +27,9 @@
         </div>
         <div class="row mt-6">
             <div class="col-md-8 mx-auto text-center">
-                <h1>初めまして。ツェングーンです。<br> よろしくお願いします。</h1>
+                <h1>初めまして。よろしくお願いします。</h1>
                 <h3>New portfolio website is coming soon...</h3>
                 <p class="lead mb-5">Software developer, DevOps, and Computer Forensics with over 5 years of combined experience. Worked on designing and implementing end-to-end features, conducting code reviews, and ensuring code quality.</p>
-                <!-- <a href="https://github.com/" class="btn btn-success svg-icon">
-                    <em class="mr-2" data-feather="github"></em>
-                    Contribute
-                </a> -->
             </div>
         </div>
         <div class="row mt-5">
@@ -45,6 +41,13 @@
                         <div class="green"></div>
                     </div>
                     <pre class="language-javascript line-numbers"><code class="language-javascript">// Project: Interactive To-Do List
+const myToDoList = new ToDoList();
+myToDoList.addTask("Write my portfolio website code (ポートフォリオ Web サイトのコードを書きます。)");
+myToDoList.addTask("Deploy on cloud platform (クラウドプラットフォーム上に展開します。)");
+myToDoList.addTask("Translate to Japanese (日本語に翻訳します。)");
+
+myToDoList.completeTask(1);
+
 class ToDoList {
   constructor() {
     this.tasks = [];
@@ -68,14 +71,6 @@ class ToDoList {
     });
   }
 }
-
-// Usage
-const myToDoList = new ToDoList();
-myToDoList.addTask("Write my portfolio website code (ポートフォリオ Web サイトのコードを書きます。)");
-myToDoList.addTask("Deploy on cloud platform (クラウドプラットフォーム上に展開します。)");
-myToDoList.addTask("Translate to Japanese (日本語に翻訳します。)");
-
-myToDoList.completeTask(1);
 
 // Display Tasks
 myToDoList.displayTasks();</code></pre>
